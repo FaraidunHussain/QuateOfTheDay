@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote-of-the-day</title>
+</head>
+<body>
+    <button onclick="tech()">generate a quote</button>
+    <script>
+    function tech() {
+        var companies=new Array() 
+    companies[0] = "microsoft"; 
+    companies[1] = "adobe";
+    companies[2] = "dell";
+        var results =new Array()
+    results[0] = "Universe spot.";
+    results[1] = "Life saver."; 
+    results[2] = "Great product.";
+    index = Math.floor(Math.random() * results.length);
+    alert(results[index]+ "\n" +"-"+ companies[index]);
+ }
+    </script>
+</body>
+</html>
